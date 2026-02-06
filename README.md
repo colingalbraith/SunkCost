@@ -1,201 +1,138 @@
 <p align="center">
-  <img src="assets/logo.png" alt="SunkCost Logo" width="120">
+  <img src="assets/logo.png" alt="SunkCost" width="80">
 </p>
 
 <h1 align="center">SunkCost</h1>
 
 <p align="center">
-  <strong>The brutally honest screen time tracker that shows you what you're really spending.</strong>
+  A screen time tracker that shows you what you're actually spending.
 </p>
 
 <p align="center">
-  <a href="#features">Features</a> •
-  <a href="#screenshots">Screenshots</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#development">Development</a> •
-  <a href="#philosophy">Philosophy</a>
+  <a href="https://github.com/colingalbraith/SunkCost/releases">
+    <img src="https://img.shields.io/github/v/release/colingalbraith/SunkCost?style=flat-square" alt="Release">
+  </a>
+  <a href="https://github.com/colingalbraith/SunkCost/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/colingalbraith/SunkCost?style=flat-square" alt="License">
+  </a>
+  <a href="https://github.com/colingalbraith/SunkCost/issues">
+    <img src="https://img.shields.io/github/issues/colingalbraith/SunkCost?style=flat-square" alt="Issues">
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/platform-macOS-blue?style=flat-square" alt="Platform">
-  <img src="https://img.shields.io/badge/built%20with-Electron-47848F?style=flat-square&logo=electron" alt="Built with Electron">
-  <img src="https://img.shields.io/badge/react-19.2-61DAFB?style=flat-square&logo=react" alt="React">
-  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
+  <img src="assets/demo.webp" alt="SunkCost Demo" width="350">
 </p>
 
 ---
 
-## 🎬 Demo
+## About
+
+SunkCost is a minimalist desktop app that automatically tracks how much time you spend on your computer. Unlike other screen time apps, it doesn't gamify the experience or reward you with achievements—it simply shows you the data.
+
+The app calculates what percentage of your remaining life you've spent, based on your birth year and life expectancy. It's designed to provide perspective, not judgment.
+
+**Key Features:**
+- Automatic tracking when the app is open
+- Background tracking (continues when minimized)
+- 12-week activity heatmap
+- Session history with detailed statistics
+- 100% local—no accounts, no cloud, no data collection
+
+---
+
+## Screenshots
 
 <p align="center">
-  <img src="assets/demo.webp" alt="SunkCost Demo" width="400">
+  <img src="assets/screenshot-track.png" alt="Tracking" width="280">
+  <img src="assets/screenshot-dashboard.png" alt="Dashboard" width="280">
+  <img src="assets/screenshot-history.png" alt="History" width="280">
 </p>
 
 ---
 
-## 💀 The Uncomfortable Truth
+## Installation
 
-Most screen time apps try to help you "manage" your usage with gamification, achievements, and feel-good streaks.
+### Download
 
-**SunkCost doesn't.**
+Download the latest release for macOS from the [Releases](https://github.com/colingalbraith/SunkCost/releases) page.
 
-Instead, it calculates exactly how much of your remaining life you've spent staring at a screen. No achievements. No streaks. No gamification. Just the raw, uncomfortable truth.
-
-> *"Every second here is a second you'll never get back."*
-
----
-
-## ✨ Features
-
-### 🕐 Automatic Tracking
-- **Zero-click tracking** — Opens the app? You're being tracked. Close it? Session saved.
-- **Background tracking** — Minimized or hidden? Still counting. Only Cmd+Q truly stops it.
-- **Persistent sessions** — Your data persists across restarts.
-
-### 📊 Mortality Calculator
-- Enter your birth year and life expectancy
-- See exactly what percentage of your remaining life you've wasted
-- Watch the counter tick up in real-time
-
-### 📈 Comprehensive Analytics
-- **Today's Timeline** — Hour-by-hour visualization of your usage
-- **12-Week Activity Heatmap** — GitHub-style contribution graph for your shame
-- **Session History** — Every session recorded with duration and timestamps
-- **Lifetime Statistics** — Total sessions, average duration, longest session
-
-### 🎯 Lies You Tell Yourself
-- Track the intentions you set ("I'll just check one thing...")
-- See how your stated intentions compare to reality
-- Confront the gap between what you say and what you do
-
----
-
-## 📸 Screenshots
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="assets/screenshot-track.png" alt="Track Tab" width="300"><br>
-      <strong>Track</strong><br>
-      <em>Real-time session tracking</em>
-    </td>
-    <td align="center">
-      <img src="assets/screenshot-dashboard.png" alt="Dashboard" width="300"><br>
-      <strong>Truth</strong><br>
-      <em>The uncomfortable statistics</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/screenshot-history.png" alt="History" width="300"><br>
-      <strong>History</strong><br>
-      <em>12-week activity heatmap</em>
-    </td>
-    <td align="center">
-      <img src="assets/screenshot-settings.png" alt="Settings" width="300"><br>
-      <strong>Settings</strong><br>
-      <em>Mortality calculator setup</em>
-    </td>
-  </tr>
-</table>
-
----
-
-## 🚀 Installation
-
-### macOS (Recommended)
-
-1. Download the latest release from the [Releases](https://github.com/colingalbraith/SunkCost/releases) page
-2. Open the `.dmg` file
-3. Drag SunkCost to your Applications folder
-4. Open SunkCost and confront reality
+- **DMG installer** — Standard macOS installer
+- **ZIP archive** — Portable version
 
 ### Build from Source
 
 ```bash
-# Clone the repository
 git clone https://github.com/colingalbraith/SunkCost.git
 cd SunkCost/app
-
-# Install dependencies
 npm install
-
-# Run in development mode
-npm run dev
-
-# Build the desktop app
 npm run electron:build
 ```
 
+The built app will be in `app/release/`.
+
 ---
 
-## 🛠 Development
+## Development
 
-### Prerequisites
+```bash
+# Install dependencies
+cd app && npm install
 
-- Node.js 18+
-- npm 9+
+# Run development server
+npm run dev
 
-### Project Structure
+# Run Electron in development
+npm run electron:dev
 
-```
-sunkcost/
-├── app/
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── hooks/         # Custom React hooks
-│   │   ├── utils/         # Utility functions
-│   │   └── types/         # TypeScript types
-│   ├── electron/          # Electron main process
-│   └── dist/              # Production build
-└── assets/                # Screenshots and media
+# Build for production
+npm run electron:build
 ```
 
-### Available Scripts
+### Tech Stack
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for web |
-| `npm run electron:dev` | Run Electron in dev mode |
-| `npm run electron:build` | Build macOS desktop app |
-
----
-
-## 🧠 Philosophy
-
-SunkCost is built on a simple premise: **awareness precedes change**.
-
-Most productivity apps fail because they:
-- Gamify the problem (turning addiction into a game)
-- Provide easy outs (skip this session, pause tracking)
-- Focus on rewards instead of reality
-
-SunkCost takes a different approach:
-- **No gamification** — Your life isn't a game
-- **No achievements** — Breathing isn't an accomplishment
-- **No escape** — If the app is open, you're being watched
-- **Pure honesty** — Just the numbers, no sugarcoating
-
-The goal isn't to make you feel good. It's to make you see clearly.
+- React 19
+- TypeScript
+- Electron
+- Vite
+- Recharts
 
 ---
 
-## 🔒 Privacy
+## Contributing
 
-- **100% local storage** — All data stays on your device
-- **No analytics** — We don't track you tracking yourself
-- **No accounts** — No sign-up, no cloud sync, no data collection
-- **Open source** — Verify it yourself
+Contributions are welcome! Here are some ways you can help:
+
+- **Report bugs** — Open an issue describing the problem
+- **Suggest features** — Share ideas for improvements
+- **Submit PRs** — Fix bugs or implement new features
+- **Improve docs** — Help make the documentation clearer
+
+### Roadmap Ideas
+
+- [ ] Windows and Linux builds
+- [ ] System tray icon with quick stats
+- [ ] Export data to CSV/JSON
+- [ ] Daily/weekly usage goals
+- [ ] Idle detection
+- [ ] App-specific tracking
+
+If you'd like to work on any of these, feel free to open an issue to discuss your approach.
 
 ---
 
-## 📄 License
+## Privacy
 
-MIT © 2024
+SunkCost stores all data locally on your device. There are no accounts, no analytics, and no network requests. Your data never leaves your computer.
+
+---
+
+## License
+
+[MIT](LICENSE) © Colin Galbraith
 
 ---
 
 <p align="center">
-  <strong>Every second here is a second you'll never get back.</strong>
+  <sub>Built with the uncomfortable truth in mind.</sub>
 </p>
