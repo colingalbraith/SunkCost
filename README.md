@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/github/v/release/colingalbraith/SunkCost?style=flat-square" alt="Release">
   </a>
   <a href="https://github.com/colingalbraith/SunkCost/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/colingalbraith/SunkCost?style=flat-square" alt="License">
+    <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
   </a>
   <a href="https://github.com/colingalbraith/SunkCost/issues">
     <img src="https://img.shields.io/github/issues/colingalbraith/SunkCost?style=flat-square" alt="Issues">
