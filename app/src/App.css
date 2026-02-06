@@ -1,0 +1,5 @@
+/* App-specific styles that don't belong in the design system */
+
+.app {
+  min-height: 100vh;
+}
