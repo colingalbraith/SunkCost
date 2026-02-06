@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="SunkCost" width="80">
+  <img src="https://github.com/colingalbraith/SunkCost/blob/main/SunkCostLogo-nobackground.png?raw=true" alt="SunkCost" width="480">
 </p>
 
 <h1 align="center">SunkCost</h1>
