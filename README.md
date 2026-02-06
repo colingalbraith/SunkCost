@@ -43,11 +43,25 @@ The app calculates what percentage of your remaining life you've spent, based on
 
 ## Screenshots
 
-<p align="center">
-  <img src="assets/screenshot-track.png" alt="Tracking" width="280">
-  <img src="assets/screenshot-dashboard.png" alt="Dashboard" width="280">
-  <img src="assets/screenshot-history.png" alt="History" width="280">
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/490e2793-0316-40f4-8cb0-73bf60442177" width="420" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/87fe6f67-056a-46a3-bc6c-4848e9e7ff1f" width="420" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/5cbc1be6-99e3-48e6-97ac-4554e422a9b6" width="420" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/8f7f92ed-e124-49d6-bf3c-6e3b4f95e37f" width="420" />
+    </td>
+  </tr>
+</table>
+
 
 ---
 
