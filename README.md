@@ -21,7 +21,9 @@
 </p>
 
 <p align="center">
-  <img src="assets/demo.webp" alt="SunkCost Demo" width="350">
+  
+https://github.com/user-attachments/assets/1dbcc0b2-8080-455e-b2b7-1cf3c8e513d4
+
 </p>
 
 ---
